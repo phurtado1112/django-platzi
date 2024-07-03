@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from mi_app.views import mi_vista
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('car-list', mi_vista),
 ]
